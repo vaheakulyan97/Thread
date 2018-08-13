@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="serif"
+        android:text="Enter sleep time in seconds"
+        android:textColor="@color/main_textView_color"
+        android:textSize="@dimen/main_textView_size"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/id_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:layout_marginTop="50dp" />
+
+        <Button
+            android:id="@+id/id_enter_button"
+            android:layout_width="@dimen/button_width_70dp"
+            android:layout_height="@dimen/button_height_40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_top_button_45dp"
+            android:text="Enter" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/id_progres_bar"
+        android:layout_width="@dimen/button_height_40dp"
+        android:layout_height="@dimen/button_height_40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/id_wait_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/main_textView_color"
+        android:text="Here you will see how much you have to wait"
+        android:textSize="18sp"/>
+
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="@dimen/button_width_70dp"
+        android:layout_height="@dimen/button_height_40dp"
+        android:layout_gravity="center"
+        android:text="Exit" />
+
+
+</LinearLayout>
